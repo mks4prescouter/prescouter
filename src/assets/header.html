@@ -1,0 +1,9 @@
+<header ng-hide="authInProgress" id="header" class="header">
+	<div class="logo" id="logo">
+    	<a href="/"><img ng-src="{{CONSTANT.imgPath}}/logo.png" /></a>
+    </div>
+
+  	<ul id="nav" class="nav nav-pills">
+      	<li role="presentation" id="page_home" ng-class="{active : setActiveMenu('/userList') }"><a ng-click='redirect("/userList")'>User List</a></li>
+    </ul>
+</header>

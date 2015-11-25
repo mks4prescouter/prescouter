@@ -1,0 +1,42 @@
+<div class="row">
+    <h2 class="page-title">
+        User Details
+    </h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+              <img ng-src="{{constant.imgPath}}/user.png" width="50" alt="" />
+            </div>
+            <div class="col-md-10">
+                {{userData['First Name']}} {{userData['Last time']}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">{{userData['Phd University']}}</div>
+        </div>
+        <form ng-submit="saveProfile()">
+        <div class="row">
+          <h2>Education:</h2>
+          <div class="col-md-12">
+            <input type="text" ng-model="userData['Phd Degree']" value="{{userData['Phd Degree']}}">-----<input type="text" ng-model="userData['Phd University']" value="{{userData['Phd University']}}">
+          </div>
+          <div class="col-md-12">
+            <input type="text" ng-model="userData['MS Degree']" value="{{userData['MS Degree']}}">-----<input type="text" ng-model="userData['MS University']" value="{{userData['MS University']}}">
+          </div>
+          <div class="col-md-12">
+            <input type="text" ng-model="userData['BS Degree']" value="{{userData['BS Degree']}}">-----<input type="text" ng-model="userData['BS University']" value="{{userData['BS University']}}">
+          </div>
+        </div>
+        <div class="row">
+          <h2>Contact:</h2>
+          <div class="col-md-4">Phone: <input type="text" ng-model="userData['Phone Number']" value="{{userData['Phone Number']}}"></div>
+          <div class="col-md-8">Email: <input type="text" ng-model="userData['Email']" value="{{userData['Email']}}"></div>
+          <div class="col-md-12">Location: <input type="text" ng-model="userData['Location']" value="{{userData['Location']}}"> - Country: <input type="text" ng-model="userData['Country']" value="{{userData['Country']}}"></div>
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-success">Save Changes</button>
+        </div>
+        </form>
+    </div>
+</div>
+

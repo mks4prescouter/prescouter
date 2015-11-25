@@ -1,0 +1,34 @@
+<div class="row">
+    <h2 class="page-title">
+        User Details
+    </h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+              <img src="{{constant.imgPath}}/user.png" width="50" alt="" />
+            </div>
+            <div class="col-md-7">
+                {{userData['First Name']}} {{userData['Last time']}}
+            </div>
+            <div>
+                <a ng-click='editUser(index)' class="btn btn-primary" role="button">Edit Profile</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">{{userData['Phd University']}}</div>
+        </div>
+        <div class="row">
+          <h2>Education:</h2>
+          <div class="col-md-12">{{userData['Phd Degree']}}-----{{userData['Phd University']}}</div>
+          <div class="col-md-12">{{userData['MS Degree']}}-----{{userData['MS University']}}</div>
+          <div class="col-md-12">{{userData['BS Degree']}}-----{{userData['BS University']}}</div>
+        </div>
+        <div class="row">
+          <h2>Contact:</h2>
+          <div class="col-md-4">Phone: {{userData['Phone Number']}}</div>
+          <div class="col-md-8">Email: {{userData['Email']}}</div>
+          <div class="col-md-12">Address: {{userData['Location']}} - {{userData['Country']}}</div>
+        </div>
+    </div>
+</div>
+

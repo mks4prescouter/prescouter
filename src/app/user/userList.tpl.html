@@ -1,0 +1,16 @@
+<div class="row">
+    <h2 class="page-title">
+        User List
+    </h2>
+    <div class="container-fluid">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="user in userData" ng-click="showDetails($index)">
+                <div style="display: inline-block"><img src="{{constant.imgPath}}/user.png" width="50" alt="" /></div>
+                <div style="display: inline-block"><label>{{user['First Name']}} {{user['Last time']}}</label><br>
+                <p>{{user['Phd University']}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
